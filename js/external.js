@@ -2,6 +2,8 @@
 
 console.log('Hello from JavaScript!');
 
+//JavaScript with HTML Exercise
+
 alert('Welcome to my Website!');
 
 let userInput = prompt('What is your favorite color?');
@@ -20,6 +22,11 @@ let AmazHour = prompt('How many hours dud you work at Amazon this week?');
 let FaceHour = prompt('How many hours did your work at FaceBook this week?');
 let totalPay = (GoogPay * GoogHour) + (AmazPay * AmazHour) + (FacePay * FaceHour);
     alert('Your total pay for this week is $' + totalPay + ".00");
+
+/*
+Initially attempted to display the total pay by doing the computation inside the alert.
+Ex:  alert('total pay $' + ((GoogPay * GoogHour) + (AmazPay * AmazHour) + (FacePay * FaceHour)))
+ */
 
 let classFull = confirm('Click OK if there is slot available for you in class.  Click Cancel if no.');
 let schConflict = Math.floor(Math.random() *2) === 0;
