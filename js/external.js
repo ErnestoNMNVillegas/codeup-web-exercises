@@ -1,6 +1,6 @@
 "use strict";
 
-console.log('Hello from JavaScript!');
+console.log('Hello from external JavaScript!');
 
 //JavaScript with HTML Exercise
 
