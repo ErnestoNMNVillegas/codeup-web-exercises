@@ -108,7 +108,7 @@ alert('Your tip amount is ' + calculateTip(tipPer, totAmt) + '.');
  */
 
 function applyDiscount(price, discPerc){
-    let discAmt = price * (discPerc / 100);
+    let discAmt = price * (discPerc);
     return (price - discAmt).toFixed(2);
 }
 
