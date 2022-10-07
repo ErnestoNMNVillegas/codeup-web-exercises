@@ -117,6 +117,6 @@ function applyDiscount(price, discPerc){
     return (price - discAmt).toFixed(2);
 }
 
-alert('Price after dicount $' + applyDiscount(45.99, .12));
+alert('Price after discount $' + applyDiscount(45.99, .12));
 
 })();
