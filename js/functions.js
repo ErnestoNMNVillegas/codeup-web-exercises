@@ -33,6 +33,8 @@ console.log(helloMessage);
  */
 
 let myName = 'Ernesto';
+sayHello(myName);
+console.log(sayHello(myName));
 alert(sayHello(myName));
 
 // let myName = sayHello('Ernesto');
