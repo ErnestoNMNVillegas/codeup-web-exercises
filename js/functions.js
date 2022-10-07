@@ -32,8 +32,11 @@ console.log(helloMessage);
  * console.
  */
 
-let myName = sayHello('Ernesto');
-console.log(myName);
+let myName = 'Ernesto';
+alert(sayHello(myName));
+
+// let myName = sayHello('Ernesto');
+// console.log(myName);
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
@@ -78,7 +81,7 @@ console.log(isTwo(random));
 
 function calculateTip(perTip, total){
     let tipAmount = total * (perTip / 100);
-    return tipAmount;
+    return tipAmount.toFixed(2);
 }
 
 /**
