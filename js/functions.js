@@ -118,5 +118,8 @@ function applyDiscount(price, discPerc){
 }
 
 alert('Price after discount $' + applyDiscount(45.99, .12));
+let promptPrice = prompt('What is the price?');
+let promptDisc = prompt('What is the discount percentage (between 0-1)?')
+    alert('This is your price after discount $' + applyDiscount(promptPrice, promptDisc));
 
 })();
