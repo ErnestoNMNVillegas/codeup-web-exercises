@@ -94,7 +94,7 @@ function calculateTip(perTip, total){
  */
 
 let totAmt= prompt('What is your total?');
-let tipPer = prompt('What percentage would you like to tip?');
+let tipPer = prompt('What percentage (1-100) would you like to tip?');
 alert('Your tip amount is ' + calculateTip(tipPer, totAmt) + '.');
 
 /**
