@@ -173,18 +173,24 @@ alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. 
     //var prom
 
     if (confirButton){
-        var prom = (prompt('Great, please enter a number.'));
+        var prom = parseInt(prompt('Great, please enter a number.'));
         console.log(prom);
     } else {
         alert('no worries.');
         return 'No worries.';
     }
 
-    if (typeof prom !== 'number'){
-            alert('Incorrect input type');
-            return 'Incorrect input type.  Needs to be number.';
-    }
-    //Was working then stopped after change.
+
+    // if (!NaN(prom)) {
+    //     alert('Incorrect input type');
+    //     return 'Incorrect input type';
+    // }
+    //Note:  This didnt work either.
+    // if (typeof prom !== 'number'){
+    //         alert('Incorrect input type');
+    //         return 'Incorrect input type.';
+    // }
+    //Note:  Was working then stopped after change.
 
     alert(numbOddEven(prom));
     alert(addHund(prom));
