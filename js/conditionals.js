@@ -71,6 +71,8 @@ console.log("hello")
     }
     }
 
+    //Note:  Use return instead of alerts.  Need to return strings.  Look at walk-thu ex:
+
     /**
  * TODOne:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -79,6 +81,7 @@ console.log("hello")
  */
     let userColor = prompt('Tell me a color!');
     analyzeColor((userColor));
+    //Note:  alert function.  currently function has alerts instead of returns so it still worked.
 
 /* ########################################################################## */
 
@@ -103,6 +106,7 @@ console.log("hello")
  */
     //let totAmt = parseFloat(prompt('What is your total?'));
     let disAmt
+    //Walk-thru Note: Declare inside function.  Only one return after if-else loop.
     function calculateTotal(luckNum, totAmt) {
         if (luckNum === 5) {
             disAmt = totAmt - (totAmt * 1);
@@ -148,6 +152,7 @@ var luckyNumber = Math.floor(Math.random() * 6);
 let totAmt = parseFloat(prompt('What is your total?'));
 let totalPrompt = calculateTotal(luckyNumber, totAmt)
 alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. Total amount after discount: '+totalPrompt);
+//Walk thru note:  Just add function calctotal inside message...instead of totalprompt.  Review ex.  Remove console log inside function.
 
 /**
  * TODO:
@@ -179,7 +184,6 @@ alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. 
         alert('no worries.');
         return 'No worries.';
     }
-
 
     if (isNaN(prom)) {
         alert('Incorrect input type');
@@ -235,9 +239,4 @@ alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. 
             return 'Your number is odd';
         }
         }
-
-
-
-
-
 })();
