@@ -181,16 +181,25 @@ alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. 
     }
 
 
-    // if (!NaN(prom)) {
-    //     alert('Incorrect input type');
-    //     return 'Incorrect input type';
-    // }
+    if (isNaN(prom)) {
+        alert('Incorrect input type');
+        return 'Incorrect input type';
+    }
+
     //Note:  This didnt work either.
     // if (typeof prom !== 'number'){
     //         alert('Incorrect input type');
     //         return 'Incorrect input type.';
     // }
     //Note:  Was working then stopped after change.
+    // function notNum(notNumm) {
+    //     if ((typeof notNumm) != 'number'){
+    //                 alert('Incorrect input type');
+    //                 return 'Incorrect input type.';
+    //         }
+    // }
+    // alert(notNum(prom))
+
 
     alert(numbOddEven(prom));
     alert(addHund(prom));
