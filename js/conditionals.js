@@ -176,14 +176,15 @@ alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. 
         var prom = (prompt('Great, please enter a number.'));
         console.log(prom);
     } else {
-        alert('no worries.')
+        alert('no worries.');
         return 'No worries.';
     }
 
-    if (typeof prom != 'number'){
+    if (typeof prom !== 'number'){
             alert('Incorrect input type');
             return 'Incorrect input type.  Needs to be number.';
     }
+    //Was working then stopped after change.
 
     alert(numbOddEven(prom));
     alert(addHund(prom));
@@ -191,6 +192,7 @@ alert('Your lucky #: '+luckyNumber+'. Total amount before discount: '+totAmt+'. 
 
     function addHund (x) {
         // alert('Your number plus 100 is ' + totnum);
+        // let parsedX = parseInt(x);
         return 'Your number plus 100 is ' + (x + 100);
     }
 
