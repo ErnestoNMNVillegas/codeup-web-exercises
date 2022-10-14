@@ -1,6 +1,6 @@
 "use strict";
 
-console.log('test');
+console.log('test loops');
 
 //Exercise #2
 function showMultiplicationTable (numb){
@@ -39,5 +39,9 @@ isOddEven(200, 20);
 
 //Exercise #5
 function minusFive (){
-
+    for (let i = 100; i >= 5; i-=5){
+        console.log(i);
+    }
 }
+minusFive();
+
