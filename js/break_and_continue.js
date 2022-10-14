@@ -1,5 +1,7 @@
 "use strict";
 
+(function (){
+
 console.log('test break');
 
 var input= prompt("Enter an odd number between 1 and 50:");
@@ -48,3 +50,5 @@ var input= prompt("Enter an odd number between 1 and 50:");
 //
 //     console.log('Here is a lovely even number: ' + i);
 // }
+
+})();

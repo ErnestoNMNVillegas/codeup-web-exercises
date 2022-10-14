@@ -1,5 +1,7 @@
 "use strict";
 
+(function (){
+
 console.log('test loops');
 
 //Exercise #2
@@ -44,4 +46,6 @@ function minusFive (){
     }
 }
 minusFive();
+
+})();
 
