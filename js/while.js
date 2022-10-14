@@ -28,11 +28,4 @@ interval++
 
 
 
-    // var i = 10;
-    //
-    // do {
-    //     console.log('while loop iteration #' + i);
-    //     i++;
-    // } while (i < 10);
-
 })();
