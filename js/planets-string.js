@@ -27,8 +27,8 @@
      * string, and <li> tags around each planet.
      */
 
-    planetsString = planetsArray.join('<br>');
-    console.log(planetsString);
+    let newPlanetsString = planetsArray.join('<br>');
+    console.log(newPlanetsString);
     //Would be useful to use in html.
 
     // planetsString = planetsArray.join('<ul></ul><li></li>')
