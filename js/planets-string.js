@@ -31,9 +31,8 @@
     console.log(planetsString);
     //Would be useful to use in html.
 
-    planetsString = planetsArray.join('<ul><li></li>')
-    console.log(planetsString);
-
-
+    // planetsString = planetsArray.join('<ul></ul><li></li>')
+    // console.log(planetsString);
+    //Note:  This did not work.
 
 })();
