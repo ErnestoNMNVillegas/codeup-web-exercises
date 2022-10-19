@@ -202,16 +202,16 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-    var newBooks = [
-        {
-            titles: '',
-            authors: {
-                firstName: '',
-                lastName: ''
-            }
-        }
-    ]
-    newBooks.createBook = new function (titles, firstName, lastName) {
+    // var newBooks = [
+    //     {
+    //         titles: '',
+    //         authors: {
+    //             firstName: '',
+    //             lastName: ''
+    //         }
+    //     }
+    // ]
+    // newBooks.createBook = new function (titles, firstName, lastName) {
         // var newBooks = [
         //     {
         //         titles: '',
@@ -221,14 +221,14 @@
         //         }
         //     }
         //         ]
-        if (confirm('Would you like to enter a book?')){
-            newBooks.push.titles(prompt('Enter book title:'));
-            newBooks.push(firstName(prompt("Enter author's first name:"));
-            newBooks.push(lastName(prompt("Enter author's last name:"));
-        }
-    };
-
-    newBooks.createBook();
+    //     if (confirm('Would you like to enter a book?')){
+    //         newBooks.push = (titles(prompt('Enter book title:'));
+    //         newBooks.push(firstName(prompt("Enter author's first name:"));
+    //         newBooks.push(lastName(prompt("Enter author's last name:"));
+    //     }
+    // };
+    //
+    // newBooks.createBook();
 
     // newBooks.createBook = new Function();
     //https://www.sitepoint.com/oriented-programming-2/
@@ -246,13 +246,13 @@
     //     alert("Honk! Honk!");
     // };
 
-
-    console.log(newBooks[0].titles);
-    console.log(newBooks[0].authors.firstName);
-    console.log(newBooks[0].authors.lastName);
-    console.log(newBooks[1].titles);
-    console.log(newBooks[1].authors.firstName);
-    console.log(newBooks[1].authors.lastName);
+    //
+    // console.log(newBooks[0].titles);
+    // console.log(newBooks[0].authors.firstName);
+    // console.log(newBooks[0].authors.lastName);
+    // console.log(newBooks[1].titles);
+    // console.log(newBooks[1].authors.firstName);
+    // console.log(newBooks[1].authors.lastName);
     // console.log(books[2].titles);
     // console.log(books[2].authors.firstName);
     // console.log(books[2].authors.lastName);
