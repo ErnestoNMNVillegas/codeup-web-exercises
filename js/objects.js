@@ -51,25 +51,45 @@
      * and console.log the relevant messages for each person
      */
 
-    let shoppers = [
+    var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
 
+
     shoppers.forEach(function(shopper) {
-        shopper.name.forEach(function(nam) {
-            let discountAmt = .12
-            let finalPrice
-            if (name.amount > 200){
-                finalPrice = name.amount - (name.amount * .12)
-            }   else finalPrice = name.amount
-            console.log(nam + '\'s ' + 'price before discount was: ' + name.amount + '. Their discount(if any) is: ' + discountAmt + 'and the final price is ' + finalPrice + '.');
-        });
+        let finalPrice
+        var discountPercent = .12
+        if (shopper.amount > 200){
+            finalPrice = shopper.amount - (shopper.amount * discountPercent);
+            console.log(shopper.name + '\'s ' + 'price before discount was: ' + shopper.amount.toFixed(2) + '. Their discount(if any) is: ' + (shopper.amount - finalPrice).toFixed(2) + ' , and the final price is ' + finalPrice.toFixed(2) + '.');
+                } else console.log(shopper.amount.toFixed(2) + ' is ' + shopper.name + '\'s total.  He got no discount.');
     });
 
+    //
+    //     shoppers.name.forEach(function(shopper) {
+    //         if (shopper.name.amount > 200){
+    //             finalPrice = shopper.name.amount - (shopper.name.amount * discountPercent);
+    //             console.log(shopper.name + '\'s ' + 'price before discount was: ' + shopper.name.amount + '. Their discount(if any) is: ' + (shopper.name.amount - finalPrice) + 'and the final price is ' + finalPrice + '.');
+    //         }
+    //         console.log(finalPrice = shopper.name.amount);
+    //     });
 
-    /** TODO:
+    // shoppers.forEach(function(shopper) {
+    //     shopper.name.forEach(function(objectName) {
+    //         let discountPercent = .12
+    //         let discountTotal
+    //         let finalPrice
+    //         if (name.amount > 200){
+    //             finalPrice = name.amount - (name.amount * discountPercent);
+    //         }   else finalPrice = name.amount;
+    //         console.log(objectName + '\'s ' + 'price before discount was: ' + name.amount + '. Their discount(if any) is: ' + discountTotal + 'and the final price is ' + finalPrice + '.');
+    //     });
+    // });
+
+
+    /** TODOne:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
@@ -81,6 +101,57 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {
+            titles: 'Goodnight Moon',
+            authors: {
+                firstName:  'Margaret',
+                lastName: 'Brown'
+            }
+        },   {
+            titles: 'The Snowy Day',
+            authors: {
+                firstName:  'Ezra',
+                lastName: 'Keats'
+            }
+        },   {
+            titles: 'Corduroy',
+            authors: {
+                firstName:  'Don',
+                lastName: 'Freeman'
+            }
+        },   {
+            titles: 'Heat 2: A Novel',
+            authors: {
+                firstName:  'Michael',
+                lastName: 'Mann'
+            }
+        },   {
+            titles: 'Quiet',
+            authors: {
+                firstName:  'Susan',
+                lastName: 'Cain'
+            }
+        },  {
+            titles: 'The Gift of Fear',
+            authors: {
+                firstName:  'Gavin',
+                lastName: 'De Becker'
+            }
+        }
+    ];
+
+        console.log(books[0].titles);
+        console.log(books[0].authors.firstName);
+        console.log(books[0].authors.lastName);
+        console.log(books[1].titles);
+        console.log(books[1].authors.firstName);
+        console.log(books[1].authors.lastName);
+        console.log(books[3].titles);
+        console.log(books[3].authors.firstName);
+        console.log(books[3].authors.lastName);
+
 
     /**
      * TODO:
@@ -106,6 +177,20 @@
      *      ---
      *      ...
      */
+
+    // books.forEach(function(book) {
+    //     book.titles.forEach(function(title) {
+    //         console.log(title);
+    //     });
+    // });
+
+    books.forEach(function(book, index) {
+        console.log(`Book: ${index + 1}`);
+        console.log('Title: ' + book.titles);
+        console.log('Author: ' + book.authors.firstName + ' ' + book.authors.lastName);
+        console.log('---');
+
+    });
 
     /**
      * Bonus:
