@@ -142,19 +142,19 @@
         }
     ];
 
-        console.log(books[0].titles);
-        console.log(books[0].authors.firstName);
-        console.log(books[0].authors.lastName);
-        console.log(books[1].titles);
-        console.log(books[1].authors.firstName);
-        console.log(books[1].authors.lastName);
-        console.log(books[3].titles);
-        console.log(books[3].authors.firstName);
-        console.log(books[3].authors.lastName);
+        // console.log(books[0].titles);
+        // console.log(books[0].authors.firstName);
+        // console.log(books[0].authors.lastName);
+        // console.log(books[1].titles);
+        // console.log(books[1].authors.firstName);
+        // console.log(books[1].authors.lastName);
+        // console.log(books[3].titles);
+        // console.log(books[3].authors.firstName);
+        // console.log(books[3].authors.lastName);
 
 
     /**
-     * TODO:
+     * TODOne:
      * Loop through the books array and output the following information about
      * each book:
      * - the book number (use the index of the book in the array)
@@ -185,11 +185,11 @@
     // });
 
     books.forEach(function(book, index) {
-        console.log(`Book: ${index + 1}`);
+        console.log('Book: ' + (index + 1));
         console.log('Title: ' + book.titles);
         console.log('Author: ' + book.authors.firstName + ' ' + book.authors.lastName);
         console.log('---');
-
+        //`Book: ${index + 1}` also works for 'Book' #.
     });
 
     /**
@@ -202,5 +202,64 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    var newBooks = [
+        {
+            titles: '',
+            authors: {
+                firstName: '',
+                lastName: ''
+            }
+        }
+    ]
+    newBooks.createBook = new function (titles, firstName, lastName) {
+        // var newBooks = [
+        //     {
+        //         titles: '',
+        //         authors: {
+        //             firstName: '',
+        //             lastName: ''
+        //         }
+        //     }
+        //         ]
+        if (confirm('Would you like to enter a book?')){
+            newBooks.push.titles(prompt('Enter book title:'));
+            newBooks.push(firstName(prompt("Enter author's first name:"));
+            newBooks.push(lastName(prompt("Enter author's last name:"));
+        }
+    };
+
+    newBooks.createBook();
+
+    // newBooks.createBook = new Function();
+    //https://www.sitepoint.com/oriented-programming-2/
+
+
+    // books.forEach(function(book, index) {
+    //     console.log('Book: ' + (index + 1));
+    //     console.log('Title: ' + book.titles);
+    //     console.log('Author: ' + book.authors.firstName + ' ' + book.authors.lastName);
+    //     console.log('---');
+    //     //`Book: ${index + 1}` also works for 'Book' #.
+    // });
+
+    // car.honk = function () {
+    //     alert("Honk! Honk!");
+    // };
+
+
+    console.log(newBooks[0].titles);
+    console.log(newBooks[0].authors.firstName);
+    console.log(newBooks[0].authors.lastName);
+    console.log(newBooks[1].titles);
+    console.log(newBooks[1].authors.firstName);
+    console.log(newBooks[1].authors.lastName);
+    // console.log(books[2].titles);
+    // console.log(books[2].authors.firstName);
+    // console.log(books[2].authors.lastName);
+    // console.log(books[3].titles);
+    // console.log(books[3].authors.firstName);
+    // console.log(books[3].authors.lastName);
+
+
 
 })();
