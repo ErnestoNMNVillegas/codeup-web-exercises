@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms HTML</title>
+</head>
+<body>
+  <header>
+    <p><h1>Register With Us</h1></p>
+  </header>
+  <main>
+    <form method="POST" action="https://request-inspector.glitch.me/">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text" placeholder="email">
+      <br>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="password">
+      <br>
+
+      <label id= bio>Bio:</label>
+      <textarea name="bio" placeholder="Enter a short bio here, please."></textarea>
+      <br>
+
+      <p>How did you hear about us?</p>
+        <label for="billboard">
+          Billboard <input id="billboard" type="checkbox" name="how_u_herd_ofus" value="billboard">
+        </label><br>
+        <label for="radio ad">
+          Radio advertisement <input id="radio ad" type ="checkbox" name="how_u_herd_ofus" value="radio ad">
+        </label><br>
+        <label for="internet ad">
+          Internet advertisement <input id="internet ad" type="checkbox" name="how_u_herd_ofus" value="internet ad">
+        </label><br>
+        <label for="other">
+          Other <input id="other" type="checkbox" name="how_u_herd_ofus" value="other">
+        </label><br>
+
+<!--      Note: for radio buttons-->
+<!--      <label for="billboard">-->
+<!--        Billboard <input type="radio" name="how_u_herd_ofus" value="billboard">-->
+<!--      </label><br>-->
+<!--      <label for="radio ad">-->
+<!--        Radio advertisement <input type ="radio" name="how_u_herd_ofus" value="radio ad">-->
+<!--      </label><br>-->
+<!--      <label for="internet ad">-->
+<!--        Internet advertisement <input type="radio" name="how_u_herd_ofus" value="internet ad">-->
+<!--      </label><br>-->
+<!--      <label for="other">-->
+<!--        Other <input type="radio" name="how_u_herd_ofus" value="other">-->
+<!--      </label><br>-->
+
+        <p><select name="Which browser are you using?">
+          <option value="chrome">Chrome</option>
+          <option value="firefox">Firefox</option>
+          <option value="safari">Safari</option>
+        </select>
+        </p>
+      <p><input type="submit"></p>
+    </form>
+  </main>
+</body>
+</html>
