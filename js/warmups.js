@@ -1,4 +1,4 @@
-
+"use strict";
 console.log('test');
 
 //TODO  Write a function that when passed an object will return the value of the object’s price property.
@@ -11,7 +11,7 @@ console.log('test');
 //         Return 'Object price is
 //     }
 
-//Correct from walk-thru
+//Correct from walk-thru with David
 // function getPrice (obj) {
 //     return obj.price;
 // }
@@ -29,20 +29,30 @@ console.log('test');
 // getLongestString(arr) // Returns “Periwinkle”
 
 let arr= ['green', 'blue', 'Periwinkle'];
-    let legth
-    let longest;
 
 function getLongestString(arr) {
-    for (let i=0; i < arr[i].length; i++){
+    let legth = 0;
+    let longest;
+    for (let i=0; i < arr.length; i++){
         if (arr[i].length > legth) {
-            var length = arr[i].length;
+            legth = arr[i].length;
             longest = arr[i];
         }
     }
-    return
+    return longest
 }
 console.log(getLongestString(arr));
 getLongestString(arr);
 
+// //Note:  From walk-thru with David
+// function getLongestString(arr){
+//     let longestStr = '';
+//     for (let str of arr){
+//         if (str.length > longestStr.length)
+//             longestStr = str;
+//     }
+//     return longestStr;
+// }
+// console.log(getLongestString(arr));
 
 
