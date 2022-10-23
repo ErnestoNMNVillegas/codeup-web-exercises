@@ -3,3 +3,61 @@
     text-decoration: underline;
 }
 
+/*#2*/
+h1 {
+    text-align:center;
+}
+
+/*#3*/
+h1, h3 {
+    color: darkslategrey;
+    text-decoration: underline;
+}
+
+/*#4 & #7*/
+body { background-color: lightgrey;
+       font-family: "Lucida Console", monospace;
+}
+
+/*#5*/
+footer { background-image: url('/img/pexels-photo-492233.jpeg');
+       height: 300px;
+       opacity: 0.5;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+/*#6*/
+ul {
+    list-style-type: "*";
+}
+
+/*table {*/
+/*    display: table;*/
+/*    border-collapse: separate;*/
+/*    box-sizing: border-box;*/
+/*    text-indent: initial;*/
+/*    border-spacing: 2px;*/
+/*}*/
+
+/*#8*/
+table, th, td {
+    border: 1px solid;
+}
+
+/*#9*/
+
+a:link {
+    color:red;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    color:blue;
+}
+a:active {
+    color:green;
+}
+
