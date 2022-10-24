@@ -11,6 +11,7 @@ console.log('test');
 //         Return 'Object price is
 //     }
 
+
 //Correct from walk-thru with David
 // function getPrice (obj) {
 //     return obj.price;
