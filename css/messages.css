@@ -9,7 +9,7 @@ body, html {
 .message-message-info {
     background-color: #D1DEFC;
     color: #49429B;
-    width: 90%;
+    width: 80%;
     border: 1px solid #D8D9DD;
     padding: 10px;
     margin: 10px;
@@ -19,7 +19,7 @@ body, html {
 .message-message-success {
     background-color: #D7F2DC;
     color: #397043;
-    width: 90%;
+    width: 80%;
     border: 1px solid #D8D9DD;
     padding: 10px;
     margin: 10px;
@@ -29,7 +29,7 @@ body, html {
 .message-message-warning {
     background-color: #FAF8CC;
     color:  #998A43;
-    width: 90%;
+    width: 80%;
     border: 1px solid #D8D9DD;
     padding: 10px;
     margin: 10px;
@@ -39,7 +39,7 @@ body, html {
 .message-message-error {
     background-color: #F5D4D7;
     color: #823240;
-    width: 90%;
+    width: 80%;
     border: 1px solid #D8D9DD;
     padding: 10px;
     margin: 10px;
