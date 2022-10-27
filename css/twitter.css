@@ -77,6 +77,10 @@ a {
 .btn-large {
     font-size: 1.3em;
     padding: 10px;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(30%);
+    transform: translateY(30%);
 }
 .img-circle {
     border-radius: 100%;
@@ -103,10 +107,10 @@ a {
 
 .media {
     width: 100%;
-    background-color: ghostwhite;
-    border-bottom: 1px solid;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
     padding: .5em;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .media-image {
@@ -117,5 +121,19 @@ a {
 
 .media-body {
     float: left;
-    width:  100%;
+    width:  calc(100% - 50px);
+}
+
+.container {
+    padding-top: 2em;
+}
+
+.profile-items {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.profile-entry {
+    margin: .5em;
 }
