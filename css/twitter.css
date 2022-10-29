@@ -45,6 +45,7 @@ a {
 }
 .nav-item {
     display: inline-block;
+    padding: 1.5em;
 }
 .nav-link:hover {
     color: var(--link-color);
@@ -52,13 +53,19 @@ a {
 .profile-image{
     position: absolute;
     top: 220px;
+    /*top: -28px;*/
+    /*from walk-thru*/
 }
 .profile {
     background: var(--light-bg);
     height: 80px;
+    /*position: relative;
+    /*from walk-thru*!*/
 }
 .profile-form{
     float: right;
+    /*line-height:
+    /*from walk-thru80px;*!*/
 }
 .profile-details{
     /*width: 25%;*/
@@ -115,6 +122,7 @@ a {
 
 .media-image {
     width: 50px;
+    /*note from walk-thru.  max-width instead.*/
     margin-top: 1.33em;
     float: left;
 }
@@ -126,6 +134,8 @@ a {
 
 .container {
     padding-top: 2em;
+    /*margin-top: 2em;*/
+    /*note from walk-thru*/
 }
 
 .profile-items {
