@@ -43,10 +43,11 @@ h2, h3 {
 section {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
+    /*flex-direction: row;*/
+    align-items: center;
     /*align-content: space-between;*/
     justify-content: space-between;
+    width: 100%;
 
     /* enter needed declarations here */
 }
@@ -74,16 +75,17 @@ section:nth-of-type(1) div:last-child {
 }
 
 .purple-box:nth-of-type(1) {
-    display: flex;
-    /*flex-grow: 4;*/
-    gap: 30px 30px; /* row-gap column gap */
-    row-gap: 20px;
-    column-gap: 80px;
+    /*display: flex;*/
+    flex-grow: 2;
+    /*gap: 30px 30px; !* row-gap column gap *!*/
+    /*row-gap: 20px;*/
+    /*column-gap: 80px;*/
 
         /* enter needed declarations here */
 }
 
 .purple-box:nth-of-type(2) {
+    flex-grow: 1;
     /*gap: 30px 30px; !* row-gap column gap *!*/
     /*row-gap: 20px;*/
     /*column-gap: 80px;*/
