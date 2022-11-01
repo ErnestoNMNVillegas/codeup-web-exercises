@@ -35,6 +35,8 @@ ul {
     display: flex;
     text-align: center;
     flex-basis: 100%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -53,6 +55,7 @@ nav a:hover {
 li:nth-of-type(5){
     font-size: 3em;
     padding: .2em;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
