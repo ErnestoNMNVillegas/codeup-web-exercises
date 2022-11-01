@@ -10,22 +10,14 @@ nav {
     background: #C1C1C1;
     display: flex;
     justify-content: space-evenly;
-
-
-
-
 }
 
-nav a {
+a {
     text-decoration: none;
     color: #040304;
     list-style-type: none;
     display: inline-block;
-    padding: .5em;
-
-
-
-
+    padding-left: 15px;
 }
 
 ul {
@@ -37,15 +29,11 @@ ul {
     flex-basis: 100%;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
-
 }
-
-
 
 li {
     margin: auto;
-
-
+    display: flex;
 }
 
 nav a:hover {
@@ -54,10 +42,13 @@ nav a:hover {
 
 li:nth-of-type(5){
     font-size: 3em;
-    padding: .2em;
+    padding: .2em 0 .2em 350px;
     font-family: 'Montserrat', sans-serif;
-
+    text-align: center;
+    flex-grow: 1;
 }
+
+
 
 /*a:nth-of-type(5){*/
 /*margin-right: auto;*/
