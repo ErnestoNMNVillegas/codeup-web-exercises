@@ -141,29 +141,87 @@ getLongestString(arr);
 // Numbers evenly divisible by 5 should be replaced by Buzz
 // Numbers evenly divisible by both 3 and 5 should be replaced by FizzBuzz
 // All other numbers should be printed in the console.
-let i = 1
-function fizzBuzz(){
-    do {
-        if (i % 3 === 0) {
-            console.log('Fizz');
-            break;
-        }   else if (i % 5 === 0) {
-            console.log("Buzz");
-            break;
-        }   else if (i % 3 === 0 && i % 5 === 0) {
-            console.log('FizzBuzz');
-            break;
-        }
-
-        // for (let i = 1; i <= 50; i++) {
-        //     if (input === i.toString()) {
-        //         console.log('Yikes!  Skipping number ' + i);
-        //         continue;
-        //     }
-        //     if (i % 2 === 1) {
-        //         console.log('Here is an odd number: ' + i)
-        //     }
-    } while (i =< 100)
-    };
+// let i = 1
+// function fizzBuzz(){
+//     do {
+//         if (i % 3 === 0) {
+//             console.log('Fizz');
+//             break;
+//         }   else if (i % 5 === 0) {
+//             console.log("Buzz");
+//             break;
+//         }   else if (i % 3 === 0 && i % 5 === 0) {
+//             console.log('FizzBuzz');
+//             break;
+//         }
+//
+//         // for (let i = 1; i <= 50; i++) {
+//         //     if (input === i.toString()) {
+//         //         console.log('Yikes!  Skipping number ' + i);
+//         //         continue;
+//         //     }
+//         //     if (i % 2 === 1) {
+//         //         console.log('Here is an odd number: ' + i)
+//         //     }
+//     } while (i =< 100)
+//     };
 
     // Note from walk-thru:  for loop for appropriate.
+
+const hamsters = [
+    {
+        name: "Hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: "male",
+        dateOfBirth: "August 6"
+    } , {
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: "female",
+        dateOfBirth: "July 10"
+    } , {
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: "male",
+        dateOfBirth: "May 3"
+    } , {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: "male",
+        dateOfBirth: "September 21"
+    } , {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', "pink"],
+        gender: "male",
+        dateOfBirth: "January 14"
+    }
+];
+
+function getAverageHeight(array) {
+    // let total = {heightInMM: 0};
+    let total = 0;
+    // let interval = 1
+    array.forEach(function(element){
+        if (element < array.length) {
+            total += array.heightInMM;
+        }
+    });
+    // for(let i = 0; i < arr.length; i++) {
+    //     if (arr[i].heightInMM > tallest.heightInMM) {
+    //         tallest = arr[i];
+    //     }
+    // }
+    // for (let el of arr) {
+    //     if (el.heightInMM > tallest.heightInMM) {
+    //         tallest = el;
+    //     }
+    // }
+    return total / array.length;
+}
+
+console.log(getAverageHeight(hamsters)); // should return 93.2;
