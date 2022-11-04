@@ -53,6 +53,7 @@
             <i class="fa-solid fa-user"></i>
             <button type="button" class="btn btn-light">Sign Up</button>
         </div>
+      </div>
   </nav>
 <!--      END NAV-->
 
@@ -72,124 +73,133 @@
 <!-- Nav tabs -->
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#sc" type="button" role="tab" aria-controls="home" aria-selected="true">Size and Crust</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#cs" type="button" role="tab" aria-controls="profile" aria-selected="false">Cheese and Sauce</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+          <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Toppings</button>
         </li>
-
       </ul>
 
       <!-- Tab panes -->
       <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-          <ul>
-            <li>
-              <div class="card" style="width: 18rem;">
-                          <div class="card-header">Size</div>
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
-                            <li class="list-group-item"><div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Small (10")
-                              </label>
-                            </div>
-                            </li>
-                            <li class="list-group-item"><div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                              <label class="form-check-label" for="flexRadioDefault1">
-                                Medium (12")
-                              </label>
-                            </div>
-                            </li>
-                          </ul>
-                        </div>
-            </li>
-            <li>
-              <div class="card" style="width: 18rem;">
-                <div class="card-header">Crust</div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <div class="card" style="width: 18rem;">
-                      <div class="card-header">
-                        Featured
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="card" style="width: 18rem;">
-                      <div class="card-header">
-                        Featured
-                      </div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <div class="tab-pane active" id="sc" role="tabpanel" aria-labelledby="home-tab">
 
-        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <div class="card-header">
-              Featured
+              Choose Size and Crust
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-          </div>
-
-          <div class="input-group">
-            <div class="input-group-text">
-              <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
-            </div>
-            <input type="text" class="form-control" aria-label="Text input with radio button">
-          </div>
-        </div>
-
-
-        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-          <div class="card" style="width: 18rem;">
+            <div class="card">
               <div class="card-header">
-                Featured
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-                </div>
-                  <div class="card" style="width: 18rem;">
-                  <div class="card-header">
-                  Featured
-                  <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                Hand Tossed
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" aria-label="flexRadioDefault1">
+                  10" (small)
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" aria-label="flexRadioDefault1">
+                  12" (medium)
+                </li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                Crispy Thin
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" aria-label="flexRadioDefault1">
+                  12" (medium)
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" name="flexRadioDefault" aria-label="flexRadioDefault1">
+                  14" (large)
+                </li>
               </ul>
             </div>
           </div>
         </div>
+
+        <div class="tab-pane" id="cs" role="tabpanel" aria-labelledby="profile-tab">
+
+          <div class="card">
+            <div class="card-header">
+              Choose Cheese and Sauce
+            </div>
+            <div class="card">
+              <div class="card-header">
+                Cheese
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">How much?</li>
+                <li class="list-group-item">
+                  <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Light</a></li>
+                    <li><a class="dropdown-item" href="#">Normal</a></li>
+                    <li><a class="dropdown-item" href="#">Extra</a></li>
+                    <li><a class="dropdown-item" href="#">Double</a></li>
+                  </ul>
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                Sauce
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">What type?</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">How much?</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
-
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+          <div class="card">
+            <div class="card-header">
+              Choose Toppings
+            </div>
+            <div class="card">
+              <div class="card-header">
+                Choose Meats
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">list item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                Choose Non-Meats
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">list item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
+        </div>
+        </div>
 
     </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/eb3cd36613.js" crossorigin="anonymous"></script>
 </body>
