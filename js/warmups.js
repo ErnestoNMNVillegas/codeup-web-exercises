@@ -420,7 +420,7 @@ function createItem (string, num){
     return newItem;
 }
 
-// TODO: 5. Write a function that takes in an array of objects and returns the object from the array with the most colors in the color property.
+// TODO: DONE 5. Write a function that takes in an array of objects and returns the object from the array with the most colors in the color property.
 //
 
 function getMostColorful (arr){
