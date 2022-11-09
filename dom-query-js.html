@@ -42,31 +42,32 @@
         var subHeader = document.getElementById("sub-header");
         console.log(subHeader);
 
-        // TODO: Set the text color of subHeader to blue
+        // TODO DONE: Set the text color of subHeader to blue
 
         subHeader.style.color = "blue";
         // document.getElementById("sub-header").style.color = "#ff0000";
 
-        // TODO: Uncomment the next line and get all list items
+        // TODO DONE: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
         console.log(listItems);
 
-        // TODO: Set text color on every other list item to grey
+        // TODO DONE: Set text color on every other list item to grey
 
         for (let i = 0; i < listItems.length; i+=2) {
             let idColor = listItems[i].style.color = "grey";
             console.log(idColor);
         }
 
-        // TODO: Set text color of li with dbid = 1 to blue
+        // TODO DONE: Set text color of li with dbid = 1 to blue
 
+        // console.log(listItems.getAttribute("data"));;
         listItems[0].style.color = 'blue';
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        // TODO DONE: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
         console.log(subParagraphs);
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        // TODO DONE: Change the text in the first sub paragraph to "Mission Accomplished!"
 
         subParagraphs[0].innerText = "Mission Accomplished!";
 
