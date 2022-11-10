@@ -36,6 +36,9 @@
 </p>
 
 <button id="btn5">Change Text in Paragraph!</button>
+<br>
+<br>
+<button id="btn6">Reload Original Page!</button>
 
 <script>
     (function() {
@@ -85,11 +88,11 @@
 
         //DOM Events Exercise//////////////
 
-        // var btn1 = document.getElementById('btn1');
-        // var btn2 = document.getElementById('btn2');
-        // var btn3 = document.getElementById('btn3');
-        // var btn4 = document.getElementById('btn4');
-        // var btn5 = document.getElementById('btn5');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+        var btn5 = document.getElementById('btn5');
 
         function changeMainHeader() {
             mainHeader.innerHTML = "JavaScript is Cool"
@@ -119,6 +122,12 @@
         document.getElementById('btn4').addEventListener("click", changeDbid1ToBlue);
         document.getElementById('btn5').addEventListener("click", changeTextSubPara);
 
+        document.getElementById('btn6').addEventListener("click", reload);
+
+        function reload () {
+            // reload page
+            location.reload()
+        }
         //Note:  Trying to use "this" instead.  Didnt work.
         // function changeMainHeader(element) {
         //     this.innerHTML = "JavaScript is Cool"
