@@ -7,6 +7,8 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+<button id="btn1">Change Main Header!</button>
+
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -14,7 +16,10 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+<button id="btn3">Change Every Other Item's Font Color to Grey!</button>
+<button id="btn4">Change DBID #1 to Blue!</button>
 <h2 id="sub-header">Hello Again.</h2>
+<button id="btn2">Change Sub Header Font to Blue!</button>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -24,6 +29,7 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button id="btn5">Change Text in Paragraph!</button>
 
 <script>
     (function() {
@@ -31,45 +37,92 @@
         // TODO DONE: Uncomment next line and get the main header element by id
 
         var mainHeader = document.getElementById('main-header');
-        console.log(mainHeader);
+        // console.log(mainHeader);
 
         // TODO DONE: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = "JavaScript is Cool"
+        // mainHeader.innerHTML = "JavaScript is Cool"
 
         // TODO DONE: Uncomment the next line and get the sub header element by id
 ""
         var subHeader = document.getElementById("sub-header");
-        console.log(subHeader);
+        // console.log(subHeader);
 
         // TODO DONE: Set the text color of subHeader to blue
 
-        subHeader.style.color = "blue";
+        // subHeader.style.color = "blue";
         // document.getElementById("sub-header").style.color = "#ff0000";
 
         // TODO DONE: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
-        console.log(listItems);
+        // console.log(listItems);
 
         // TODO DONE: Set text color on every other list item to grey
 
-        for (let i = 0; i < listItems.length; i+=2) {
-            let idColor = listItems[i].style.color = "grey";
-            console.log(idColor);
-        }
+        // for (let i = 0; i < listItems.length; i+=2) {
+        //     let idColor = listItems[i].style.color = "grey";
+        //     // console.log(idColor);
+        // }
 
         // TODO DONE: Set text color of li with dbid = 1 to blue
 
         // console.log(listItems.getAttribute("data"));;
-        listItems[0].style.color = 'blue';
+        // listItems[0].style.color = 'blue';
 
         // TODO DONE: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
-        console.log(subParagraphs);
+        // console.log(subParagraphs);
 
         // TODO DONE: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        subParagraphs[0].innerText = "Mission Accomplished!";
+        // subParagraphs[0].innerText = "Mission Accomplished!";
+
+        //DOM Events Exercise
+
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+        var btn5 = document.getElementById('btn5');
+
+        function changeMainHeader() {
+            mainHeader.innerHTML = "JavaScript is Cool"
+        }
+
+        function changeSubHeaderFont() {
+            subHeader.style.color = "blue";
+        }
+
+        function changeEveryOtherLi() {
+            for (let i = 0; i < listItems.length; i+=2) {
+                let idColor = listItems[i].style.color = "grey";
+            }
+        }
+
+        function changeDbid1ToBlue() {
+            listItems[0].style.color = 'blue';
+        }
+
+        function changeTextSubPara() {
+            subParagraphs[0].innerText = "Mission Accomplished!";
+        }
+
+        btn1.addEventListener("click", changeMainHeader);
+        btn2.addEventListener("click", changeSubHeaderFont);
+        btn3.addEventListener("click", changeEveryOtherLi);
+        btn4.addEventListener("click", changeDbid1ToBlue);
+        btn5.addEventListener("click", changeTextSubPara);
+
+        //Note:  Trying to use "this" instead.  Didnt work.
+        // function changeMainHeader(element) {
+        //     this.innerHTML = "JavaScript is Cool"
+        // }
+        // function changeManeHeader (button, element){
+        //     var btn1 = document.getElementById(button);
+        //     changeMainHeader(element);
+        // }
+        //
+        // changeManeHeader('btn1', mainHeader);
 
     })();
 </script>
