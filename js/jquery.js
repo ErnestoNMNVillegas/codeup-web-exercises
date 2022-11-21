@@ -41,6 +41,7 @@ $(function() {
     $(document).keyup(function(e){
             userInput.push(e.key);
             if (userInput.toString().indexOf(konamiCode) >= 0) {
+                console.log(userInput);
                 //Result if correct code entered.
                 cheatCodeActive();
                 //Resets the input array
@@ -59,7 +60,7 @@ $(function() {
         return '<div>' +
             '   <h3>How do you do, fellow gamer!?!</h3>' +
             '   <br>' +
-            '   <h3>I also know the cheat codes!</h3>' +
+            '   <h3>I see you know the cheat code!</h3>' +
             '   <br>' +
             '   <h3>You have added 30 lives!!</h3>' +
             '   </div>';
