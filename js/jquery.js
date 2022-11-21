@@ -36,6 +36,7 @@ $(function() {
         console.log(event.key);
     });
 
+    var tbody = document.querySelector('#innHtml');
     var userInput = []
     var konamiCode = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight', 'b','a','Enter'];
     $(document).keyup(function(e){
@@ -66,7 +67,6 @@ $(function() {
             '   </div>';
     }
 
-    var tbody = document.querySelector('#innHtml');
 });
 
 
