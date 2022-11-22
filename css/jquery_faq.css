@@ -1,3 +1,11 @@
 .invisible {
     visibility: hidden;
 }
+
+.highlight {
+    background-color: yellow;
+}
+
+.visible {
+    visibility: visible;
+}
