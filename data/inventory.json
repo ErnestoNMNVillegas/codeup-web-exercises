@@ -37,5 +37,12 @@
             "tool"
         ],
         "price": 10
+    }, {
+        "title": "Horse",
+        "quantity": 5,
+        "categories": [
+            "tool"
+        ],
+        "price": 1500
     }
 ]

@@ -46,7 +46,8 @@
     $("#refresh-inventory").click(function () {
         $.get("data/inventory.json").done(function(data) {
             let toolInventory = '';
-            // toolInventory.html = "";
+            $("#insertProducts").html('');
+
             $.each(data, function(key, value){
                 toolInventory += "<tr><td>" + value.title + "</td><td>" + value.quantity + "</td><td>" + value.price + "</td><td>" + value.categories + "</td></tr>";
             })
@@ -54,7 +55,6 @@
             $("#insertProducts").append(toolInventory);
             console.log(toolInventory);
             //continues to list out same table.
-
         });
 
     })

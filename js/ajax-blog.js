@@ -1,4 +1,7 @@
-$.get("data/blog.json").done(function(data) {
+(function() {
+    "use strict";
+
+    $.get("data/blog.json").done(function(data) {
     console.log(data);
     // $("#insertProducts").append("<tr><td>" + data.title[i] + "</td><td>" + data.quantity[i] + "</td><td>" + data.price[i] + "</td></tr>");
 
@@ -11,3 +14,6 @@ $.get("data/blog.json").done(function(data) {
 
     $("#insertBlog").append(blogPosts);
 });
+
+})();
+
