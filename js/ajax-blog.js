@@ -9,5 +9,5 @@ $.get("data/blog.json").done(function(data) {
 
     // "<p>Request to API complete.</p>"
 
-    $("#posts").append(blogPosts);
+    $("#insertBlog").append(blogPosts);
 });
