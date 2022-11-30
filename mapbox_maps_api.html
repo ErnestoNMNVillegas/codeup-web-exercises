@@ -12,11 +12,28 @@
       width: 100%;
       height: 700px;
     }
+
+    /*#fly {*/
+    /*  display: block;*/
+    /*  position: relative;*/
+    /*  margin: 0px auto;*/
+    /*  width: 50%;*/
+    /*  height: 40px;*/
+    /*  padding: 10px;*/
+    /*  border: none;*/
+    /*  border-radius: 3px;*/
+    /*  font-size: 12px;*/
+    /*  text-align: center;*/
+    /*  color: #fff;*/
+    /*  background: #ee8a65;*/
+    /*}*/
   </style>
 </head>
 <body>
 
 <h1>My First Mapbox Map!</h1>
+
+<!--<br><button id="fly">Fly</button><br>-->
 
 <!-- The HTML element that serves as the Mapbox container -->
 <div id='map'></div>
@@ -37,10 +54,141 @@
     center: [-98.4916, 29.4252]
   });
 
-  geocode("1014 S Alamo St, San Antonio, TX 78210", mapBoxExerciseKey).then(function(result) {
-    console.log(result);
-    map.setCenter(result);
-    map.setZoom(20);
+  //Restaurant #1
+
+  // let hotJoy = geocode("1014 S Alamo St, San Antonio, TX 78210", mapBoxExerciseKey).then(function(result) {
+  //   // console.log(result);
+  //   map.setCenter(result);
+  //   map.setZoom(10);
+  // });
+  //
+  // var hotJoyMarker = new mapboxgl.Marker()
+  //         .setLngLat([-98.49089, 29.4136])
+  //         .addTo(map);
+  //
+  // // var popup = new mapboxgl.Popup()
+  // //         .setLngLat([-98.49089, 29.4136])
+  // //         .setHTML("<p>Hot Joy!</p>")
+  // //         .addTo(map)
+  //
+  // var hotJoyPopup = new mapboxgl.Popup()
+  //         .setHTML("<p>Hot Joy!</p>")
+  //
+  // hotJoyMarker.setPopup(hotJoyPopup)
+
+  let hotJoyObj = {};
+
+  hotJoyObj.adress = "1014 S Alamo St, San Antonio, TX 78210";
+  hotJoyObj.lng = [-98.49089];
+  hotJoyObj.lat = [29.4136];
+  hotJoyObj.info = "<p>Hot Joy!</p>"
+  // hotJoyObj.popup = hotJoyPopup
+
+  // hotJoyArr.push(hotJoy);
+  // hotJoyArr.push(hotJoyMarker);
+  // hotJoyArr.push(hotJoyPopup);
+  // console.log(hotJoyObj);
+
+  //Restaurant #2
+
+  // let roadHouse = geocode("16915 San Pedro Ave, Hollywood Park, TX 78232", mapBoxExerciseKey).then(function(result) {
+  //   // console.log(result);
+  //   map.setCenter(result);
+  //   map.setZoom(10);
+  // });
+  //
+  // var roadHouseMarker = new mapboxgl.Marker()
+  //         .setLngLat([-98.47375, 29.59657])
+  //         .addTo(map);
+  //
+  // var roadHousePopup = new mapboxgl.Popup()
+  //         .setHTML("<p>Texas Road House!</p>")
+  //
+  // roadHouseMarker.setPopup(roadHousePopup)
+
+  // let roadHouseArr = [];
+  // roadHouseArr.push(roadHouse);
+  // roadHouseArr.push(roadHouseMarker);
+  // roadHouseArr.push(roadHousePopup);
+  let roadHouseObj = {};
+
+  roadHouseObj.address = "16915 San Pedro Ave, Hollywood Park, TX 78232";
+  roadHouseObj.lng = [-98.47375];
+  roadHouseObj.lat = [29.59657];
+  roadHouseObj.info = "<p>Texas Road House!</p>"
+  // roadHouseObj.popup = roadHousePopup
+
+  // console.log(roadHouseObj);
+
+  //Restaurant #2
+
+  // let InNout = geocode("10918 Culebra Rd, San Antonio, TX 78253", mapBoxExerciseKey).then(function(result) {
+  //   // console.log(result);
+  //   map.setCenter(result);
+  //   map.setZoom(10);
+  // });
+  //
+  // var InNoutMarker = new mapboxgl.Marker()
+  //         .setLngLat([-98.70838, 29.49494])
+  //         .addTo(map);
+  //
+  // var InNoutPopup = new mapboxgl.Popup()
+  //         .setHTML("<p>In N Out!</p>")
+  //
+  // InNoutMarker.setPopup(InNoutPopup)
+
+  // let InNoutArr = [];
+  // InNoutArr.push(InNout);
+  // InNoutArr.push(InNoutMarker);
+  // InNoutArr.push(InNoutPopup);
+
+  let InNoutObj = {};
+
+  InNoutObj.address = "10918 Culebra Rd, San Antonio, TX 78253";
+  InNoutObj.lng = [-98.70838];
+  InNoutObj.lat = [29.49494];
+  InNoutObj.info = "<p>In N Out!</p>"
+  // InNoutObj.popup = InNoutPopup
+  // console.log(InNoutObj);
+
+  //All Restaurants
+  let restArr = [];
+
+  restArr.push(hotJoyObj);
+  // console.log(restArr);
+
+  restArr.push(roadHouseObj);
+  // console.log(restArr);
+
+  restArr.push(InNoutObj);
+  // console.log(restArr);
+
+  // document.getElementById('fly').addEventListener('click', function () {
+  //   // Back to the first coordinate.
+  //   let idx;
+  //   if (idx >= restArr.length) {
+  //     idx = 0;
+  //   }
+  //   map.flyTo({
+  //     center: restArr[idx]
+  //   });
+  //   idx++;
+  // });
+
+  restArr.forEach((item) => {
+    // let geo = geocode(item.address, mapBoxExerciseKey).then(function(result) {
+    //     map.setCenter(result);
+    //     map.setZoom(10);
+    //   });
+
+    var Marker = new mapboxgl.Marker()
+            .setLngLat([item.lng, item.lat])
+            .addTo(map);
+
+    var Popup = new mapboxgl.Popup()
+            .setHTML(item.info)
+
+    Marker.setPopup(Popup)
   });
 
 
