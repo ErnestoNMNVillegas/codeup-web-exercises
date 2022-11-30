@@ -26,7 +26,7 @@
 
 <!-- Custom JS // Exernal -->
 
-<!--<script src="js/mapbox_maps_api.js"</script>-->
+<script src="js/mapbox-geocoder-utils.js"></script>
 <script src="js/keys.js"></script>
 <script>
   mapboxgl.accessToken = mapBoxExerciseKey;
@@ -36,6 +36,14 @@
     zoom: 10,
     center: [-98.4916, 29.4252]
   });
+
+  geocode("1014 S Alamo St, San Antonio, TX 78210", mapBoxExerciseKey).then(function(result) {
+    console.log(result);
+    map.setCenter(result);
+    map.setZoom(20);
+  });
+
+
 </script>
 
 </body>
