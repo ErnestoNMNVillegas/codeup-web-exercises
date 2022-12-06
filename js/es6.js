@@ -36,7 +36,7 @@ const users = [
 // to the languages array
 // TODO: replace the `var` keyword with `const`, then try to reassign a variable
 // declared as `const`
-var name = 'Ernesto Villegas';
+var name = 'Ernesto';
 var email = 'ernesto.nmn.villegas@gmail.com';
 var languages = ["JavaScript", "HTML", "CSS"];
 
