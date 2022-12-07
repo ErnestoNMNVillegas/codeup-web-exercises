@@ -1,4 +1,6 @@
+"use strict";
 
+(() => {
 
 const users = [
     {
@@ -80,5 +82,10 @@ const userNames = users.reduce((name, user) => {
     return name;
 }, 'Your instructors are: ');
 console.log(userNames);
+
+
+
+})();
+
 
 
