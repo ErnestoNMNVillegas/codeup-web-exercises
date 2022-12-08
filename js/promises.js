@@ -5,9 +5,9 @@ console.log("test");
 (() => {
 
 //TODO Create a function that accepts a GitHub username, and returns a promise that resolves returning just the date of the last commit that user made. Reference the github api documentation to achieve this.
-    var tbody = document.getElementById('#last-push');
-    tbody = ""
-    let lastPush = ""
+    let tbody = document.getElementById("push");
+    var lastPush
+
     const lastPushCommit = (userName) => {
         const myPromise = fetch('https://api.github.com/users/' + userName + '/events/public', {headers: {'Authorization': GITHUB_KEY}})
         myPromise.then(response => response.json())
@@ -19,10 +19,9 @@ console.log("test");
                         // console.log(userObj);
                             if(index===0){
                                 console.log(userObj.created_at);
-                                tbody.innerHTML = userObj.created_at
+                                tbody.innerHTML = userName + "'s last push was on: " + userObj.created_at
                                 return lastPush = userObj.created_at
                             }
-
                         }
                     }
                 })
