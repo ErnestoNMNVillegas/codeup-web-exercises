@@ -142,6 +142,7 @@ list += '</ul>';
     // textHtml.innerHTML = list;
   }
     list += `</ul>`;
+  
   console.log(list);
 // for(let num of arrOfNums) {
 //   if (num % 2 === 0) {
